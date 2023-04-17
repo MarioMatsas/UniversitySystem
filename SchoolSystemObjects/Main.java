@@ -22,7 +22,7 @@ public class Main {
         //Load the file data/ Create new data files 
         SaveAndLoad saveLoad = new SaveAndLoad();
 
-        contents = saveLoad.getFileInfo("ObjectData/contents.ser", contents);
+        contents = saveLoad.getFileInfo("ObjectActivity/contents.ser", contents);
         if (!contents.isEmpty()){
             students = contents.get(0);
             universities = contents.get(1);
@@ -45,7 +45,7 @@ public class Main {
         contents.add(4, departments);
         contents.add(5, uniStudents);
         contents.add(6, teachers);
-        saveLoad.saveFileInfo("ObjectData/contents.ser", contents);
+        saveLoad.saveFileInfo("ObjectActivity/contents.ser", contents);
 
     }
 }
